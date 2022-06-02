@@ -22,10 +22,12 @@ const possibleStringTypes = [
   `STRING`,
   `TINYTEXT`,
   `MEDIUMTEXT`,
-  `LONGTEXT`
+  `LONGTEXT`,
+  `ENUM`,
 ]
 
 const isTypeExists = (typesList, item) => {
+  console.log(item);
   return _.filter(typesList, type => item.indexOf(type) > -1).length > 0
 }
 
