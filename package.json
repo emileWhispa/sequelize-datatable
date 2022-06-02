@@ -1,0 +1,65 @@
+{
+  "name": "sequelize-datatable",
+  "version": "2.1.0",
+  "description": "Server-side datatables with Sequelize (works with Sequelize 3 and 4)",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint src test",
+    "build": "babel src --out-dir dist",
+    "test": "mocha",
+    "test:setup": "./initialize-database-container",
+    "prepublish": "npm run clean && npm run lint && npm run build"
+  },
+  "keywords": [
+    "sequelize",
+    "datatables"
+  ],
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "author": "Husnul Anwari <husnulhamidiah@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.11",
+    "sequelize": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com/husnulhamidiah/sequelize-datatable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/husnulhamidiah/sequelize-datatable/issues"
+  },
+  "homepage": "https://github.com/husnulhamidiah/sequelize-datatable#readme",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-env": "^1.7.0",
+    "bluebird": "^3.5.5",
+    "chai": "^4.2.0",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.1.4",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "pg": "^7.11.0",
+    "pg-native": "^3.0.0",
+    "rimraf": "^2.6.3"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
