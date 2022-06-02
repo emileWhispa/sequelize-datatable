@@ -18,7 +18,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const possibleNumericTypes = [`INTEGER`, `DECIMAL`, `FLOAT`, `DOUBLE`, `INT`, `TINYINT`, `BIGINT`, `NUMBER`, `REAL`];
 
-const possibleStringTypes = [`CHARACTER VARYING`, `VARCHAR`, `TEXT`, `CHAR`, `STRING`, `TINYTEXT`, `MEDIUMTEXT`, `LONGTEXT`];
+const possibleStringTypes = [`CHARACTER VARYING`, `VARCHAR`, `TEXT`, `CHAR`, `STRING`, `TINYTEXT`, `MEDIUMTEXT`, `LONGTEXT`,`ENUM`];
 
 const isTypeExists = (typesList, item) => {
   return _lodash2.default.filter(typesList, type => item.indexOf(type) > -1).length > 0;
